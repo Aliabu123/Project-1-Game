@@ -13,7 +13,15 @@
     bottom: 100px;
     background-color: blueviolet;
 }
-
+.obstacles{
+    width: 30px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    bottom: 100px;
+    right: 0;
+    background-color: blue;
+}
 .animate{
     animation: jump 500ms;
 }
