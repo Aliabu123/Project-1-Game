@@ -15,26 +15,26 @@
 }
 .obstacles{
     width: 30px;
-    height: 100px;
+    height: 80px;
     background-color: black;
     position: absolute;
     bottom: 100px;
     right: 0;
-    animation: obstacle 1.7s infinite;
+    animation: obstacle 4s infinite;
     background-color: blue;
 }
 .animate{
-    animation: jump 500ms;
+    animation: jump 1500ms;
 }
 @keyframes jump{
     0%{
         bottom: 100px
     }
     30%{
-        bottom: 220px;
+        bottom: 400px;
     }
     70%{
-        bottom: 220px;
+        bottom: 400px;
     }
     100%{
         bottom: 100px;
@@ -56,4 +56,11 @@
 
 .show{
     display: block;
+}
+
+
+.score{
+    position: absolute;
+    top: 30px;
+    right: 50px;
 }
