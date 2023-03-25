@@ -20,6 +20,7 @@
     position: absolute;
     bottom: 100px;
     right: 0;
+    animation: obstacle 1.7s infinite;
     background-color: blue;
 }
 .animate{
@@ -39,5 +40,20 @@
         bottom: 100px;
     }
 }
+@keyframes obstacle{
+    0%{
+        right: 0px;
+    }
+    100%{
+        
+        right: 105%;
+    }
+}
 
+.hide{
+    display: none;
+}
 
+.show{
+    display: block;
+}
