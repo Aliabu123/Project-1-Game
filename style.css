@@ -3,7 +3,11 @@
     height: 100px;
     position: absolute;
     bottom: 0;
-    background-color: aquamarine;
+    background: hsla(217, 100%, 50%, 1);
+    background: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0061FF", endColorstr="#60EFFF", GradientType=1 );
 }
 #character {
     width: 50px;
@@ -30,18 +34,51 @@
     background-color: blue;
 }
 
+#obstacle1 {
+    width: 27px;
+    height: 50px;
+    background-color: rgb(247, 6, 6);
+    position: absolute;
+    bottom: 100px;
+    right: 100%;
+    animation: obstacle 5.9s infinite;
+    background-color: rgb(255, 0, 0);
+  }
+  #obstacle2 {
+    width: 25px;
+    height: 50px;
+    background-color: rgb(6, 247, 18);
+    position: absolute;
+    bottom: 100px;
+    right: 100%;
+    animation: obstacle 8.9s infinite;
+    background-color: rgb(30, 255, 0);
+  }
+  #obstacle3 {
+    width: 20px;
+    height: 50px;
+    background-color: rgb(199, 6, 247);
+    position: absolute;
+    bottom: 100px;
+    right: 100%;
+    animation: obstacle 11.5s infinite;
+    background-color: rgb(255, 0, 179);
+  }
+
+
+
 .animate{
-    animation: jump 500ms;
+    animation: jump 1500ms;  
 }
 @keyframes jump{
     0%{
         bottom: 100px
     }
     30%{
-        bottom: 220px;
+        bottom: 420px;
     }
     70%{
-        bottom: 220px;
+        bottom: 420px;
     }
     100%{
         bottom: 100px;
@@ -70,4 +107,23 @@
     position: absolute;
     top: 30px;
     right: 50px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.h1,.h3{
+    text-align: center;
+}
+.h1{
+    font-size: 20px;
 }
