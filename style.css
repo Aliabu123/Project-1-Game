@@ -11,30 +11,37 @@
     border-radius: 30%;
     position: absolute;
     bottom: 100px;
-    background-color: blueviolet;
+    right: calc(100%-100px);
+    background: hsla(339, 100%, 55%, 1);
+    background: linear-gradient(90deg, hsla(339, 100%, 55%, 1) 0%, hsla(197, 100%, 64%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(339, 100%, 55%, 1) 0%, hsla(197, 100%, 64%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(339, 100%, 55%, 1) 0%, hsla(197, 100%, 64%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FF1B6B", endColorstr="#45CAFF", GradientType=1 );
 }
+   
 .obstacles{
     width: 30px;
     height: 80px;
     background-color: black;
     position: absolute;
     bottom: 100px;
-    right: 0;
-    animation: obstacle 4s infinite;
+    right: 100%;
+    animation: obstacle 1.7s infinite;
     background-color: blue;
 }
+
 .animate{
-    animation: jump 1500ms;
+    animation: jump 500ms;
 }
 @keyframes jump{
     0%{
         bottom: 100px
     }
     30%{
-        bottom: 400px;
+        bottom: 220px;
     }
     70%{
-        bottom: 400px;
+        bottom: 220px;
     }
     100%{
         bottom: 100px;
