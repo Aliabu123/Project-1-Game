@@ -22,7 +22,7 @@
     background: -webkit-linear-gradient(90deg, hsla(339, 100%, 55%, 1) 0%, hsla(197, 100%, 64%, 1) 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FF1B6B", endColorstr="#45CAFF", GradientType=1 );
 }
-   
+
 .obstacles{
     width: 30px;
     height: 80px;
@@ -30,8 +30,8 @@
     position: absolute;
     bottom: 100px;
     right: 100%;
-    animation: obstacle 1.7s infinite;
-    background-color: blue;
+    animation: obstacle 3.3s infinite;
+    background-color: blue; 
 }
 
 #obstacle1 {
@@ -41,7 +41,7 @@
     position: absolute;
     bottom: 100px;
     right: 100%;
-    animation: obstacle 5.9s infinite;
+    animation: obstacle 6.2s infinite;
     background-color: rgb(255, 0, 0);
   }
   #obstacle2 {
@@ -51,7 +51,7 @@
     position: absolute;
     bottom: 100px;
     right: 100%;
-    animation: obstacle 8.9s infinite;
+    animation: obstacle 9.2s infinite;
     background-color: rgb(30, 255, 0);
   }
   #obstacle3 {

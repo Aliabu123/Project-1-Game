@@ -46,71 +46,83 @@ var gameValid = setInterval(function(){
     // showScore();
 }, 20)
 
-// var gameValid = setInterval(function () {
-// 	let characterTop = parseInt(
-// 	  window.getComputedStyle(character).getPropertyValue("top")
-// 	);
+var gameValid = setInterval(function () {
+	let characterTop = parseInt(
+	  window.getComputedStyle(character).getPropertyValue("top")
+	);
   
-// 	let obstacleLeft2 = parseInt(
-// 	  window.getComputedStyle(obstacle1).getPropertyValue("left")
-// 	);
+	let obstacleLeft2 = parseInt(
+	  window.getComputedStyle(obstacle1).getPropertyValue("left")
+	);
   
-// 	console.log("obstacleLeft", obstacleLeft2);
-// 	console.log("ch", characterTop);
-// 	if (obstacleLeft2 < 15 && obstacleLeft2 > 0 && characterTop >= 550) {
-// 	  obstacle.style.animation = "none";
-// 	  obstacle.style.display = "none";
-// 	  alert("You Lose!! Your To Slow!!");
-// 	  gameOver.classList.add("show");
-// 	}
+	console.log("obstacleLeft", obstacleLeft2);
+	console.log("ch", characterTop);
+	if (obstacleLeft2 < 15 && obstacleLeft2 > 0 && characterTop >= 550) {
+	  obstacle.style.animation = "none";
+	  obstacle.style.animation = "none";
+	  obstacle1.style.animation = "none";
+		obstacle2.style.animation = "none";
+		obstacle3.style.animation = "none";
+	  obstacle.style.display = "none";
+	  alert("You Lose!! Your To Slow!!");
+	  gameOver.classList.add("show");
+	}
   
-// 	// score++;
-// 	showScore();
-//   }, 20);
+	// score++;
+	showScore();
+  }, 20);
 
-// var gameValid = setInterval(function () {
-// 	let characterTop = parseInt(
-// 	  window.getComputedStyle(character).getPropertyValue("top")
-// 	);
+var gameValid = setInterval(function () {
+	let characterTop = parseInt(
+	  window.getComputedStyle(character).getPropertyValue("top")
+	);
   
-// 	let obstacleLeft3 = parseInt(
-// 	  window.getComputedStyle(obstacle2).getPropertyValue("left")
-// 	);
+	let obstacleLeft3 = parseInt(
+	  window.getComputedStyle(obstacle2).getPropertyValue("left")
+	);
   
-// 	console.log("obstacleLeft", obstacleLeft3);
-// 	console.log("ch", characterTop);
-// 	if (obstacleLeft3 < 15 && obstacleLeft3 > 0 && characterTop >= 550) {
-// 	  obstacle.style.animation = "none";
-// 	  obstacle.style.display = "none";
-// 	  alert("You Lose!! Your To Slow!!");
-// 	  gameOver.classList.add("show");
-// 	}
+	console.log("obstacleLeft", obstacleLeft3);
+	console.log("ch", characterTop);
+	if (obstacleLeft3 < 15 && obstacleLeft3 > 0 && characterTop >= 550) {
+	  obstacle.style.animation = "none";
+	  obstacle.style.animation = "none";
+		obstacle1.style.animation = "none";
+		obstacle2.style.animation = "none";
+		obstacle3.style.animation = "none";
+	  obstacle.style.display = "none";
+	  alert("You Lose!! Your To Slow!!");
+	  gameOver.classList.add("show");
+	}
   
-// 	// score++;
-// 	showScore();
-//   }, 20);
+	// score++;
+	showScore();
+  }, 20);
 
-// var gameValid = setInterval(function () {
-// 	let characterTop = parseInt(
-// 	  window.getComputedStyle(character).getPropertyValue("top")
-// 	);
+var gameValid = setInterval(function () {
+	let characterTop = parseInt(
+	  window.getComputedStyle(character).getPropertyValue("top")
+	);
   
-// 	let obstacleLeft4 = parseInt(
-// 	  window.getComputedStyle(obstacle3).getPropertyValue("left")
-// 	);
+	let obstacleLeft4 = parseInt(
+	  window.getComputedStyle(obstacle3).getPropertyValue("left")
+	);
   
-// 	console.log("obstacleLeft", obstacleLeft4);
-// 	console.log("ch", characterTop);
-// 	if (obstacleLeft4 < 15 && obstacleLeft4 > 0 && characterTop >= 550) {
-// 	  obstacle.style.animation = "none";
-// 	  obstacle.style.display = "none";
-// 	  alert("You Lose!! Your To Slow!!");
-// 	  gameOver.classList.add("show");
-// 	}
+	console.log("obstacleLeft", obstacleLeft4);
+	console.log("ch", characterTop);
+	if (obstacleLeft4 < 15 && obstacleLeft4 > 0 && characterTop >= 550) {
+	  obstacle.style.animation = "none";
+	  obstacle.style.animation = "none";
+		obstacle1.style.animation = "none";
+		obstacle2.style.animation = "none";
+		obstacle3.style.animation = "none";
+	  obstacle.style.display = "none";
+	  alert("You Lose!! Your To Slow!!");
+	  gameOver.classList.add("show");
+	}
   
-// 	// score++;
-// 	showScore();
-//   }, 20);
+	// score++;
+	showScore();
+  }, 20);
   
 
   function showScore(){
@@ -118,7 +130,7 @@ var gameValid = setInterval(function(){
     displayScore.innerText = score;
 }
 
- let updateScore = setInterval(showScore,1000)
+ let updateScore = setInterval(showScore,200)
 
 
 
