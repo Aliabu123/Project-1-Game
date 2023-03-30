@@ -68,11 +68,57 @@ var gameValid = setInterval(function(){
 // 	showScore();
 //   }, 20);
 
+// var gameValid = setInterval(function () {
+// 	let characterTop = parseInt(
+// 	  window.getComputedStyle(character).getPropertyValue("top")
+// 	);
+  
+// 	let obstacleLeft3 = parseInt(
+// 	  window.getComputedStyle(obstacle2).getPropertyValue("left")
+// 	);
+  
+// 	console.log("obstacleLeft", obstacleLeft3);
+// 	console.log("ch", characterTop);
+// 	if (obstacleLeft3 < 15 && obstacleLeft3 > 0 && characterTop >= 550) {
+// 	  obstacle.style.animation = "none";
+// 	  obstacle.style.display = "none";
+// 	  alert("You Lose!! Your To Slow!!");
+// 	  gameOver.classList.add("show");
+// 	}
+  
+// 	// score++;
+// 	showScore();
+//   }, 20);
 
+// var gameValid = setInterval(function () {
+// 	let characterTop = parseInt(
+// 	  window.getComputedStyle(character).getPropertyValue("top")
+// 	);
+  
+// 	let obstacleLeft4 = parseInt(
+// 	  window.getComputedStyle(obstacle3).getPropertyValue("left")
+// 	);
+  
+// 	console.log("obstacleLeft", obstacleLeft4);
+// 	console.log("ch", characterTop);
+// 	if (obstacleLeft4 < 15 && obstacleLeft4 > 0 && characterTop >= 550) {
+// 	  obstacle.style.animation = "none";
+// 	  obstacle.style.display = "none";
+// 	  alert("You Lose!! Your To Slow!!");
+// 	  gameOver.classList.add("show");
+// 	}
+  
+// 	// score++;
+// 	showScore();
+//   }, 20);
+  
 
-function showScore(){
+  function showScore(){
 	score ++;
     displayScore.innerText = score;
 }
 
  let updateScore = setInterval(showScore,1000)
+
+
+
