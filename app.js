@@ -76,4 +76,3 @@ function showScore(){
 }
 
  let updateScore = setInterval(showScore,1000)
-
