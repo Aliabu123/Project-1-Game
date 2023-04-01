@@ -63,6 +63,7 @@ var gameValid = setInterval(function () {
 	  obstacle1.style.animation = "none";
 		obstacle2.style.animation = "none";
 		obstacle3.style.animation = "none";
+		clearInterval(updateScore)
 	  obstacle.style.display = "none";
 	  alert("You Lose!! Your To Slow!!");
 	  gameOver.classList.add("show");
@@ -89,6 +90,7 @@ var gameValid = setInterval(function () {
 		obstacle1.style.animation = "none";
 		obstacle2.style.animation = "none";
 		obstacle3.style.animation = "none";
+		clearInterval(updateScore)
 	  obstacle.style.display = "none";
 	  alert("You Lose!! Your To Slow!!");
 	  gameOver.classList.add("show");
@@ -115,6 +117,7 @@ var gameValid = setInterval(function () {
 		obstacle1.style.animation = "none";
 		obstacle2.style.animation = "none";
 		obstacle3.style.animation = "none";
+		clearInterval(updateScore)
 	  obstacle.style.display = "none";
 	  alert("You Lose!! Your To Slow!!");
 	  gameOver.classList.add("show");
